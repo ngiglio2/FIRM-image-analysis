@@ -118,8 +118,8 @@ for image in os.listdir(img_path):
     del gaussian_img, gaussian_img1
     gc.collect()
     
-    #GAUSSIAN with sigma=7
-    gaussian_img2 = nd.gaussian_filter(img, sigma=7)
+    #GAUSSIAN with sigma=1
+    gaussian_img2 = nd.gaussian_filter(img, sigma=1)
     gaussian_img3 = gaussian_img2.reshape(-1)
     df['Gaussian s7'] = gaussian_img3
     del gaussian_img2, gaussian_img3
